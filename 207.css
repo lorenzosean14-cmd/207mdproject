@@ -1,3 +1,4 @@
+
 /* css Zen Garden submission - 'Kyoto Forest', by John Politowski, http://rpmdesignfactory.com/ */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 /* All associated graphics copyright 2007, John Politowski */
@@ -18,14 +19,15 @@ html {
 	
 body {
 	font-family: Arial, sans-serif;
-	color:#131db3;
+	line-height:18px;
+	font-size:12px;
+	color:#00ffff;
 
-body{
-    background-image: url("/giphy.webp");
+	background-image: url("cyberpunk.gif");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
+
 	margin: 0; 
 	padding: 0;
 }
