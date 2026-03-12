@@ -18,14 +18,13 @@ html {
 	
 body {
 	font-family: Arial, sans-serif;
-	line-height:18px;
-	font-size:12px;
 	color:#131db3;
 
 body{
-    background-image: url("cherry blossom");
+    background-image: url("cyberpunk.gif");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 	margin: 0; 
 	padding: 0;
