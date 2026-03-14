@@ -6,8 +6,8 @@ html {
 body {
 	font-family: Arial, sans-serif;
     color:black;
-
-    background-image: url("/cyberpunk.gif");
+	
+    background-image: url("cyberpunk.gif");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
