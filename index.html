@@ -1,284 +1,2012 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<title>CSS Zen Garden: The Beauty of CSS Design</title>
+<meta charset="utf-8">
+<title>CSS Zen Garden: The Beauty of CSS Design</title>
 
-	<link rel="stylesheet" href="207.css">
-	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
+<link rel="stylesheet" href="207.css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.csszengarden.com/zengarden.xml">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Dave Shea">
-	<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
-	<meta name="robots" content="all">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Dave Shea">
+<meta name="description" content="A demonstration of what can be accomplished visually through CSS-based design.">
+<meta name="robots" content="all">
 
 
-	<!--[if lt IE 9]>
-	<script src="script/html5shiv.js"></script>
-	<![endif]-->
+<!--[if lt IE 9]>
+<script src="script/html5shiv.js"></script>
+<![endif]-->
 </head>
 
 <!--
 
 
 
-	View source is a feature, not a bug. Thanks for your curiosity and
-	interest in participating!
+View source is a feature, not a bug. Thanks for your curiosity and
+interest in participating!
 
-	Here are the submission guidelines for the new and improved csszengarden.com:
+Here are the submission guidelines for the new and improved csszengarden.com:
 
-	- CSS3? Of course! Prefix for ALL browsers where necessary.
-	- go responsive; test your layout at multiple screen sizes.
-	- your browser testing baseline: IE9+, recent Chrome/Firefox/Safari, and iOS/Android
-	- Graceful degradation is acceptable, and in fact highly encouraged.
-	- use classes for styling. Don't use ids.
-	- web fonts are cool, just make sure you have a license to share the files. Hosted
-	  services that are applied via the CSS file (ie. Google Fonts) will work fine, but
-	  most that require custom HTML won't. TypeKit is supported, see the readme on this
-	  page for usage instructions: https://github.com/mezzoblue/csszengarden.com/
+- CSS3? Of course! Prefix for ALL browsers where necessary.
+- go responsive; test your layout at multiple screen sizes.
+- your browser testing baseline: IE9+, recent Chrome/Firefox/Safari, and iOS/Android
+- Graceful degradation is acceptable, and in fact highly encouraged.
+- use classes for styling. Don't use ids.
+- web fonts are cool, just make sure you have a license to share the files. Hosted
+services that are applied via the CSS file (ie. Google Fonts) will work fine, but
+most that require custom HTML won't. TypeKit is supported, see the readme on this
+page for usage instructions: https://github.com/mezzoblue/csszengarden.com/
 
-	And a few tips on building your CSS file:
+And a few tips on building your CSS file:
 
-	- use :first-child, :last-child and :nth-child to get at non-classed elements
-	- use ::before and ::after to create pseudo-elements for extra styling
-	- use multiple background images to apply as many as you need to any element
-	- use the Kellum Method for image replacement, if still needed. http://goo.gl/GXxdI
-	- don't rely on the extra divs at the bottom. Use ::before and ::after instead.
+- use :first-child, :last-child and :nth-child to get at non-classed elements
+- use ::before and ::after to create pseudo-elements for extra styling
+- use multiple background images to apply as many as you need to any element
+- use the Kellum Method for image replacement, if still needed. http://goo.gl/GXxdI
+- don't rely on the extra divs at the bottom. Use ::before and ::after instead.
 
-		
+
 -->
 
 <body id="css-zen-garden">
-	<div class="page-wrapper">
+<div class="page-wrapper">
 
-		<section class="intro" id="zen-intro">
-			<header role="banner">
-				<h1>CSS Zen Garden</h1>
-				<h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
-			</header>
+<section class="intro" id="zen-intro">
+<header role="banner">
+<h1>CSS Zen Garden</h1>
+<h2>The Beauty of <abbr title="Cascading Style Sheets">CSS</abbr> Design</h2>
+</header>
 
-			<div class="summary" id="zen-summary" role="article">
-				<p>A demonstration of what can be accomplished through <abbr
-						title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to
-					load it into this page.</p>
-				<p>Download the example <a href="/examples/index"
-						title="This page's source HTML code, not to be modified.">html file</a> and <a
-						href="/examples/style.css" title="This page's sample CSS, the file you may modify.">css file</a>
-				</p>
-			</div>
+<div class="summary" id="zen-summary" role="article">
+<p>A demonstration of what can be accomplished through <abbr title="Cascading Style Sheets">CSS</abbr>-based design. Select any style sheet from the list to load it into this page.</p>
+<p>Download the example <a href="/examples/index" title="This page's source HTML code, not to be modified.">html file</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">css file</a></p>
+</div>
 
-			<div class="preamble" id="zen-preamble" role="article">
-				<h3>The Road to Enlightenment</h3>
-				<p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <abbr
-						title="Document Object Model">DOM</abbr>s, broken <abbr
-						title="Cascading Style Sheets">CSS</abbr> support, and abandoned browsers.</p>
-				<p>We must clear the mind of the past. Web enlightenment githas been achieved thanks to the tireless
-					efforts of folk like the <abbr title="World Wide Web Consortium">W3C</abbr>, <abbr
-						title="Web Standards Project">WaSP</abbr>, and the major browser creators.</p>
-				<p>The CSS Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin
-					to see with clarity. Learn to use the time-honored techniques in new and invigorating fashion.
-					Become one with the web.</p>
-			</div>
-		</section>
+<div class="preamble" id="zen-preamble" role="article">
+<h3>The Road to Enlightenment</h3>
+<p>Littering a dark and dreary road lay the past relics of browser-specific tags, incompatible <abbr title="Document Object Model">DOM</abbr>s, broken <abbr title="Cascading Style Sheets">CSS</abbr> support, and abandoned browsers.</p>
+<p>We must clear the mind of the past. Web enlightenment has been achieved thanks to the tireless efforts of folk like the <abbr title="World Wide Web Consortium">W3C</abbr>, <abbr title="Web Standards Project">WaSP</abbr>, and the major browser creators.</p>
+<p>The CSS Zen Garden invites you to relax and meditate on the important lessons of the masters. Begin to see with clarity. Learn to use the time-honored techniques in new and invigorating fashion. Become one with the web.</p>
+</div>
+</section>
 
-		<div class="main supporting" id="zen-supporting" role="main">
-			<div class="explanation" id="zen-explanation" role="article">
-				<h3>So What is This About?</h3>
-				<p>There is a continuing need to show the power of <abbr title="Cascading Style Sheets">CSS</abbr>. The
-					Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing
-					designs in the list. Clicking on any one will load the style sheet into this very page. The <abbr
-						title="HyperText Markup Language">HTML</abbr> remains the same, the only thing that has changed
-					is the external <abbr title="Cascading Style Sheets">CSS</abbr> file. Yes, really.</p>
-				<p><abbr title="Cascading Style Sheets">CSS</abbr> allows complete and total control over the style of a
-					hypertext document. The only way this can be illustrated in a way that gets people excited is by
-					demonstrating what it can truly be, once the reins are placed in the hands of those able to create
-					beauty from structure. Designers and coders alike have contributed to the beauty of the web; we can
-					always push it further.</p>
-			</div>
+<div class="main supporting" id="zen-supporting" role="main">
+<div class="explanation" id="zen-explanation" role="article">
+<h3>So What is This About?</h3>
+<p>There is a continuing need to show the power of <abbr title="Cascading Style Sheets">CSS</abbr>. The Zen Garden aims to excite, inspire, and encourage participation. To begin, view some of the existing designs in the list. Clicking on any one will load the style sheet into this very page. The <abbr title="HyperText Markup Language">HTML</abbr> remains the same, the only thing that has changed is the external <abbr title="Cascading Style Sheets">CSS</abbr> file. Yes, really.</p>
+<p><abbr title="Cascading Style Sheets">CSS</abbr> allows complete and total control over the style of a hypertext document. The only way this can be illustrated in a way that gets people excited is by demonstrating what it can truly be, once the reins are placed in the hands of those able to create beauty from structure. Designers and coders alike have contributed to the beauty of the web; we can always push it further.</p>
+</div>
 
-			<div class="participation" id="zen-participation" role="article">
-				<h3>Participation</h3>
-				<p>Strong visual design has always been our focus. You are modifying this page, so strong <abbr
-						title="Cascading Style Sheets">CSS</abbr> skills are necessary too, but the example files are
-					commented well enough that even <abbr title="Cascading Style Sheets">CSS</abbr> novices can use them
-					as starting points. Please see the <a href="/pages/resources/"
-						title="A listing of CSS-related resources"><abbr title="Cascading Style Sheets">CSS</abbr>
-						Resource Guide</a> for advanced tutorials and tips on working with <abbr
-						title="Cascading Style Sheets">CSS</abbr>.</p>
-				<p>You may modify the style sheet in any way you wish, but not the <abbr
-						title="HyperText Markup Language">HTML</abbr>. This may seem daunting at first if you&#8217;ve
-					never worked this way before, but follow the listed links to learn more, and use the sample files as
-					a guide.</p>
-				<p>Download the sample <a href="/examples/index"
-						title="This page's source HTML code, not to be modified.">HTML</a> and <a
-						href="/examples/style.css" title="This page's sample CSS, the file you may modify.">CSS</a> to
-					work on a copy locally. Once you have completed your masterpiece (and please, don&#8217;t submit
-					half-finished work) upload your <abbr title="Cascading Style Sheets">CSS</abbr> file to a web server
-					under your control. <a href="/pages/submit/"
-						title="Use the contact form to send us your CSS file">Send us a link</a> to an archive of that
-					file and all associated assets, and if we choose to use it we will download it and place it on our
-					server.</p>
-			</div>
+<div class="participation" id="zen-participation" role="article">
+<h3>Participation</h3>
+<p>Strong visual design has always been our focus. You are modifying this page, so strong <abbr title="Cascading Style Sheets">CSS</abbr> skills are necessary too, but the example files are commented well enough that even <abbr title="Cascading Style Sheets">CSS</abbr> novices can use them as starting points. Please see the <a href="/pages/resources/" title="A listing of CSS-related resources"><abbr title="Cascading Style Sheets">CSS</abbr> Resource Guide</a> for advanced tutorials and tips on working with <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+<p>You may modify the style sheet in any way you wish, but not the <abbr title="HyperText Markup Language">HTML</abbr>. This may seem daunting at first if you&#8217;ve never worked this way before, but follow the listed links to learn more, and use the sample files as a guide.</p>
+<p>Download the sample <a href="/examples/index" title="This page's source HTML code, not to be modified.">HTML</a> and <a href="/examples/style.css" title="This page's sample CSS, the file you may modify.">CSS</a> to work on a copy locally. Once you have completed your masterpiece (and please, don&#8217;t submit half-finished work) upload your <abbr title="Cascading Style Sheets">CSS</abbr> file to a web server under your control. <a href="/pages/submit/" title="Use the contact form to send us your CSS file">Send us a link</a> to an archive of that file and all associated assets, and if we choose to use it we will download it and place it on our server.</p>
+</div>
 
-			<div class="benefits" id="zen-benefits" role="article">
-				<h3>Benefits</h3>
-				<p>Why participate? For recognition, inspiration, and a resource we can all refer to showing people how
-					amazing <abbr title="Cascading Style Sheets">CSS</abbr> really can be. This site serves as equal
-					parts inspiration for those working on the web today, learning tool for those who will be tomorrow,
-					and gallery of future techniques we can all look forward to.</p>
-			</div>
+<div class="benefits" id="zen-benefits" role="article">
+<h3>Benefits</h3>
+<p>Why participate? For recognition, inspiration, and a resource we can all refer to showing people how amazing <abbr title="Cascading Style Sheets">CSS</abbr> really can be. This site serves as equal parts inspiration for those working on the web today, learning tool for those who will be tomorrow, and gallery of future techniques we can all look forward to.</p>
+</div>
 
-			<div class="requirements" id="zen-requirements" role="article">
-				<h3>Requirements</h3>
-				<p>Where possible, we would like to see mostly <abbr title="Cascading Style Sheets, levels 1 and 2">CSS
-						1 &amp; 2</abbr> usage. <abbr title="Cascading Style Sheets, levels 3 and 4">CSS 3 &amp;
-						4</abbr> should be limited to widely-supported elements only, or strong fallbacks should be
-					provided. The CSS Zen Garden is about functional, practical <abbr
-						title="Cascading Style Sheets">CSS</abbr> and not the latest bleeding-edge tricks viewable by 2%
-					of the browsing public. The only real requirement we have is that your <abbr
-						title="Cascading Style Sheets">CSS</abbr> validates.</p>
-				<p>Luckily, designing this way shows how well various browsers have implemented <abbr
-						title="Cascading Style Sheets">CSS</abbr> by now. When sticking to the guidelines you should see
-					fairly consistent results across most modern browsers. Due to the sheer number of user agents on the
-					web these days &#8212; especially when you factor in mobile &#8212; pixel-perfect layouts may not be
-					possible across every platform. That&#8217;s okay, but do test in as many as you can. Your design
-					should work in at least IE9+ and the latest Chrome, Firefox, iOS and Android browsers (run by over
-					90% of the population).</p>
-				<p>We ask that you submit original artwork. Please respect copyright laws. Please keep objectionable
-					material to a minimum, and try to incorporate unique and interesting visual themes to your work.
-					We&#8217;re well past the point of needing another garden-related design.</p>
-				<p>This is a learning exercise as well as a demonstration. You retain full copyright on your graphics
-					(with limited exceptions, see <a href="/pages/submit/guidelines/">submission guidelines</a>), but we
-					ask you release your <abbr title="Cascading Style Sheets">CSS</abbr> under a Creative Commons
-					license identical to the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"
-						title="View the Zen Garden's license information.">one on this site</a> so that others may learn
-					from your work.</p>
-				<p role="contentinfo">By <a href="http://www.mezzoblue.com/">Dave Shea</a>. Bandwidth graciously donated
-					by <a href="http://www.mediatemple.net/">mediatemple</a>. Now available: <a
-						href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.
-				</p>
-			</div>
+<div class="requirements" id="zen-requirements" role="article">
+<h3>Requirements</h3>
+<p>Where possible, we would like to see mostly <abbr title="Cascading Style Sheets, levels 1 and 2">CSS 1 &amp; 2</abbr> usage. <abbr title="Cascading Style Sheets, levels 3 and 4">CSS 3 &amp; 4</abbr> should be limited to widely-supported elements only, or strong fallbacks should be provided. The CSS Zen Garden is about functional, practical <abbr title="Cascading Style Sheets">CSS</abbr> and not the latest bleeding-edge tricks viewable by 2% of the browsing public. The only real requirement we have is that your <abbr title="Cascading Style Sheets">CSS</abbr> validates.</p>
+<p>Luckily, designing this way shows how well various browsers have implemented <abbr title="Cascading Style Sheets">CSS</abbr> by now. When sticking to the guidelines you should see fairly consistent results across most modern browsers. Due to the sheer number of user agents on the web these days &#8212; especially when you factor in mobile &#8212; pixel-perfect layouts may not be possible across every platform. That&#8217;s okay, but do test in as many as you can. Your design should work in at least IE9+ and the latest Chrome, Firefox, iOS and Android browsers (run by over 90% of the population).</p>
+<p>We ask that you submit original artwork. Please respect copyright laws. Please keep objectionable material to a minimum, and try to incorporate unique and interesting visual themes to your work. We&#8217;re well past the point of needing another garden-related design.</p>
+<p>This is a learning exercise as well as a demonstration. You retain full copyright on your graphics (with limited exceptions, see <a href="/pages/submit/guidelines/">submission guidelines</a>), but we ask you release your <abbr title="Cascading Style Sheets">CSS</abbr> under a Creative Commons license identical to the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Zen Garden's license information.">one on this site</a> so that others may learn from your work.</p>
+<p role="contentinfo">By <a href="http://www.mezzoblue.com/">Dave Shea</a>. Bandwidth graciously donated by <a href="http://www.mediatemple.net/">mediatemple</a>. Now available: <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.</p>
+</div>
 
-			<footer>
-				<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML"
-					class="zen-validate-html">HTML</a>
-				<a href="http://jigsaw.w3.org/css-validator/check/referer"
-					title="Check the validity of this site&#8217;s CSS" class="zen-validate-css">CSS</a>
-				<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/"
-					title="View the Creative Commons license of this site: Attribution-NonCommercial-ShareAlike."
-					class="zen-license">CC</a>
-				<a href="http://mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site"
-					class="zen-accessibility">A11y</a>
-				<a href="https://github.com/mezzoblue/csszengarden.com" title="Fork this site on Github"
-					class="zen-github">GH</a>
-			</footer>
+<footer>
+<a href="http://validator.w3.org/check/referer" title="Check the validity of this site&#8217;s HTML" class="zen-validate-html">HTML</a>
+<a href="http://jigsaw.w3.org/css-validator/check/referer" title="Check the validity of this site&#8217;s CSS" class="zen-validate-css">CSS</a>
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="View the Creative Commons license of this site: Attribution-NonCommercial-ShareAlike." class="zen-license">CC</a>
+<a href="http://mezzoblue.com/zengarden/faq/#aaa" title="Read about the accessibility of this site" class="zen-accessibility">A11y</a>
+<a href="https://github.com/mezzoblue/csszengarden.com" title="Fork this site on Github" class="zen-github">GH</a>
+</footer>
 
-		</div>
-
-			<div class="wrapper">
-
-				<div class="design-selection" id="design-selection">
-					<h3 class="select">Select a Design:</h3>
-					<nav>
-						<ul>
-							<li>
-								<a href="/221/" class="design-name">Mid Century Modern</a> by <a
-									href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
-							</li>
-							<li>
-								<a href="/220/" class="design-name">Garments</a> by <a href="http://danielmall.com/"
-									class="designer-name">Dan Mall</a>
-							</li>
-							<li>
-								<a href="/219/" class="design-name">Steel</a> by <a href="http://steffen-knoeller.de"
-									class="designer-name">Steffen Knoeller</a>
-							</li>
-							<li>
-								<a href="/218/" class="design-name">Apothecary</a> by <a href="http://trentwalton.com"
-									class="designer-name">Trent Walton</a>
-							</li>
-							<li>
-								<a href="/217/" class="design-name">Screen Filler</a> by <a
-									href="http://elliotjaystocks.com/" class="designer-name">Elliot Jay Stocks</a>
-							</li>
-							<li>
-								<a href="/216/" class="design-name">Fountain Kiss</a> by <a
-									href="http://jeremycarlson.com" class="designer-name">Jeremy Carlson</a>
-							</li>
-							<li>
-								<a href="/215/" class="design-name">A Robot Named Jimmy</a> by <a
-									href="http://meltmedia.com/" class="designer-name">meltmedia</a>
-							</li>
-							<li>
-								<a href="/214/" class="design-name">Verde Moderna</a> by <a
-									href="http://www.mezzoblue.com/" class="designer-name">Dave Shea</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-
-				<div class="design-archives" id="design-archives">
-					<h3 class="archives">Archives:</h3>
-					<nav">
-						<ul>
-							<li class="next">
-								<a href="/207/page1">
-									Next Designs <span class="indicator">&rsaquo;</span>
-								</a>
-							</li>
-							<li class="viewall">
-								<a href="/pages/alldesigns/" title="View every submission to the Zen Garden.">
-									View All Designs </a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-
-				<div class="zen-resources" id="zen-resources">
-					<h3 class="resources">Resources:</h3>
-					<ul>
-						<li class="view-css">
-							<a href="/207/207.css" title="View the source CSS file of the currently-viewed design.">
-								View This Design&#8217;s <abbr title="Cascading Style Sheets">CSS</abbr> </a>
-						</li>
-						<li class="css-resources">
-							<a href="/pages/resources/" title="Links to great sites with information on using CSS.">
-								<abbr title="Cascading Style Sheets">CSS</abbr> Resources </a>
-						</li>
-						<li class="zen-faq">
-							<a href="/pages/faq/" title="A list of Frequently Asked Questions about the Zen Garden.">
-								<abbr title="Frequently Asked Questions">FAQ</abbr> </a>
-						</li>
-						<li class="zen-submit">
-							<a href="/pages/submit/" title="Send in your own CSS file.">
-								Submit a Design </a>
-						</li>
-						<li class="zen-translations">
-							<a href="/pages/translations/" title="View translated versions of this page.">
-								Translations </a>
-						</li>
-					</ul>
-				</div>
-			</div>
+</div>
 
 
-	</div>
+<aside class="sidebar" role="complementary">
+<div class="wrapper">
 
-	<!--
+<div class="design-selection" id="design-selection">
+<h3 class="select">Select a Design:</h3>
+<nav role="navigation">
+<ul>
+<li>
+<a href="/221/" class="design-name">Mid Century Modern</a> by <a href="http://andrewlohman.com/" class="designer-name">Andrew Lohman</a>
+</li> <li>
+<a href="/220/" class="design-name">Garments</a> by <a href="http://danielmall.com/" class="designer-name">Dan Mall</a>
+</li> <li>
+<a href="/219/" class="design-name">Steel</a> by <a href="http://steffen-knoeller.de" class="designer-name">Steffen Knoeller</a>
+</li> <li>
+<a href="/218/" class="design-name">Apothecary</a> by <a href="http://trentwalton.com" class="designer-name">Trent Walton</a>
+</li> <li>
+<a href="/217/" class="design-name">Screen Filler</a> by <a href="http://elliotjaystocks.com/" class="designer-name">Elliot Jay Stocks</a>
+</li> <li>
+<a href="/216/" class="design-name">Fountain Kiss</a> by <a href="http://jeremycarlson.com" class="designer-name">Jeremy Carlson</a>
+</li> <li>
+<a href="/215/" class="design-name">A Robot Named Jimmy</a> by <a href="http://meltmedia.com/" class="designer-name">meltmedia</a>
+</li> <li>
+<a href="/214/" class="design-name">Verde Moderna</a> by <a href="http://www.mezzoblue.com/" class="designer-name">Dave Shea</a>
+</li> </ul>
+</nav>
+</div>
 
-	These superfluous divs/spans were originally provided as catch-alls to add extra imagery.
-	These days we have full ::before and ::after support, favour using those instead.
-	These only remain for historical design compatibility. They might go away one day.
-		
+<div class="design-archives" id="design-archives">
+<h3 class="archives">Archives:</h3>
+<nav role="navigation">
+<ul>
+<li class="next">
+<a href="/207/page1">
+Next Designs <span class="indicator">&rsaquo;</span>
+</a>
+</li>
+<li class="viewall">
+<a href="/pages/alldesigns/" title="View every submission to the Zen Garden.">
+View All Designs </a>
+</li>
+</ul>
+</nav>
+</div>
+
+<div class="zen-resources" id="zen-resources">
+<h3 class="resources">Resources:</h3>
+<ul>
+<li class="view-css">
+<a href="/207/207.css" title="View the source CSS file of the currently-viewed design.">
+View This Design&#8217;s <abbr title="Cascading Style Sheets">CSS</abbr> </a>
+</li>
+<li class="css-resources">
+<a href="/pages/resources/" title="Links to great sites with information on using CSS.">
+<abbr title="Cascading Style Sheets">CSS</abbr> Resources </a>
+</li>
+<li class="zen-faq">
+<a href="/pages/faq/" title="A list of Frequently Asked Questions about the Zen Garden.">
+<abbr title="Frequently Asked Questions">FAQ</abbr> </a>
+</li>
+<li class="zen-submit">
+<a href="/pages/submit/" title="Send in your own CSS file.">
+Submit a Design </a>
+</li>
+<li class="zen-translations">
+<a href="/pages/translations/" title="View translated versions of this page.">
+Translations </a>
+</li>
+</ul>
+</div>
+</div>
+</aside>
+
+
+</div>
+
+<!--
+
+These superfluous divs/spans were originally provided as catch-alls to add extra imagery.
+These days we have full ::before and ::after support, favour using those instead.
+These only remain for historical design compatibility. They might go away one day.
+
 -->
-	<div class="extra1" role="presentation"></div>
-	<div class="extra2" role="presentation"></div>
-	<div class="extra3" role="presentation"></div>
-	<div class="extra4" role="presentation"></div>
-	<div class="extra5" role="presentation"></div>
-	<div class="extra6" role="presentation"></div>
+<div class="extra1" role="presentation"></div><div class="extra2" role="presentation"></div><div class="extra3" role="presentation"></div>
+<div class="extra4" role="presentation"></div><div class="extra5" role="presentation"></div><div class="extra6" role="presentation"></div>
 
 </body>
-
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 3; to line 31, column 136
+
+>↩↩ ↩↩↩ <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/light-0c8222dcd7a4f9b7.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 137; to line 31, column 284
+
+b7.css" /><link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/light_high_contrast-51c0c6e0c085cc0f.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 285; to line 31, column 417
+
+0f.css" /><link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/dark-fc6eec18532c3ae0.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 418; to line 31, column 564
+
+e0.css" /><link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/dark_high_contrast-96d7b2bab5a6ae4e.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 565; to line 31, column 728
+
+4e.css" /><link data-color-theme="light" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light-0c8222dcd7a4f9b7.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 565; to line 31, column 728
+
+4e.css" /><link data-color-theme="light" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light-0c8222dcd7a4f9b7.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 729; to line 31, column 920
+
+b7.css" /><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-51c0c6e0c085cc0f.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 729; to line 31, column 920
+
+b7.css" /><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-51c0c6e0c085cc0f.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 921; to line 31, column 1106
+
+0f.css" /><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-4dd12c5689d6b012.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 921; to line 31, column 1106
+
+0f.css" /><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-4dd12c5689d6b012.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 1107; to line 31, column 1320
+
+12.css" /><link data-color-theme="light_colorblind_high_contrast" crossorigin="anonymous" media="all" rel="sty…href="https://github.githubassets.com/assets/light_colorblind_high_contrast-dfa0c9e22ba6ba2b.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 1107; to line 31, column 1320
+
+12.css" /><link data-color-theme="light_colorblind_high_contrast" crossorigin="anonymous" media="all" rel="sty…href="https://github.githubassets.com/assets/light_colorblind_high_contrast-dfa0c9e22ba6ba2b.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 1321; to line 31, column 1506
+
+2b.css" /><link data-color-theme="light_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_tritanopia-9fd9c8859395d1a8.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 1321; to line 31, column 1506
+
+2b.css" /><link data-color-theme="light_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_tritanopia-9fd9c8859395d1a8.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 1507; to line 31, column 1720
+
+a8.css" /><link data-color-theme="light_tritanopia_high_contrast" crossorigin="anonymous" media="all" rel="sty…href="https://github.githubassets.com/assets/light_tritanopia_high_contrast-9c32304a2a8ac631.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 1507; to line 31, column 1720
+
+a8.css" /><link data-color-theme="light_tritanopia_high_contrast" crossorigin="anonymous" media="all" rel="sty…href="https://github.githubassets.com/assets/light_tritanopia_high_contrast-9c32304a2a8ac631.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 1721; to line 31, column 1882
+
+31.css" /><link data-color-theme="dark" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark-fc6eec18532c3ae0.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 1721; to line 31, column 1882
+
+31.css" /><link data-color-theme="dark" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark-fc6eec18532c3ae0.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 1883; to line 31, column 2072
+
+e0.css" /><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-96d7b2bab5a6ae4e.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 1883; to line 31, column 2072
+
+e0.css" /><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-96d7b2bab5a6ae4e.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 2073; to line 31, column 2256
+
+4e.css" /><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-0c6ca283d4d35cea.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 2073; to line 31, column 2256
+
+4e.css" /><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-0c6ca283d4d35cea.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 2257; to line 31, column 2468
+
+ea.css" /><link data-color-theme="dark_colorblind_high_contrast" crossorigin="anonymous" media="all" rel="styl…-href="https://github.githubassets.com/assets/dark_colorblind_high_contrast-2dc46b4919fae81e.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 2257; to line 31, column 2468
+
+ea.css" /><link data-color-theme="dark_colorblind_high_contrast" crossorigin="anonymous" media="all" rel="styl…-href="https://github.githubassets.com/assets/dark_colorblind_high_contrast-2dc46b4919fae81e.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 2469; to line 31, column 2652
+
+1e.css" /><link data-color-theme="dark_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_tritanopia-271332ec9362e8d3.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 2469; to line 31, column 2652
+
+1e.css" /><link data-color-theme="dark_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_tritanopia-271332ec9362e8d3.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 2653; to line 31, column 2864
+
+d3.css" /><link data-color-theme="dark_tritanopia_high_contrast" crossorigin="anonymous" media="all" rel="styl…-href="https://github.githubassets.com/assets/dark_tritanopia_high_contrast-eb5bb84e91d6d553.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 2653; to line 31, column 2864
+
+d3.css" /><link data-color-theme="dark_tritanopia_high_contrast" crossorigin="anonymous" media="all" rel="styl…-href="https://github.githubassets.com/assets/dark_tritanopia_high_contrast-eb5bb84e91d6d553.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 2865; to line 31, column 3040
+
+53.css" /><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-f3aa862f2ac7ead2.css" /><link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 2865; to line 31, column 3040
+
+53.css" /><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-f3aa862f2ac7ead2.css" /><link
+Error: A link element must have an href or imagesrcset attribute, or both.
+
+From line 31, column 3041; to line 31, column 3244
+
+d2.css" /><link data-color-theme="dark_dimmed_high_contrast" crossorigin="anonymous" media="all" rel="styleshe…data-href="https://github.githubassets.com/assets/dark_dimmed_high_contrast-206b6b93f856629b.css" />↩↩ <s
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 31, column 3041; to line 31, column 3244
+
+d2.css" /><link data-color-theme="dark_dimmed_high_contrast" crossorigin="anonymous" media="all" rel="styleshe…data-href="https://github.githubassets.com/assets/dark_dimmed_high_contrast-206b6b93f856629b.css" />↩↩ <s
+Warning: The type attribute for the style element is not needed and should be omitted.
+
+From line 33, column 3; to line 33, column 25
+
+ss" />↩↩ <style type="text/css">↩ :
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 43, column 5; to line 43, column 150
+
+yle>↩↩ <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-primitives-6da842159062d25e.css" />↩ <
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 44, column 5; to line 44, column 139
+
+s" />↩ <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-b69241e157469407.css" />↩ <
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 45, column 5; to line 45, column 139
+
+s" />↩ <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/global-68dd150ce6c8e711.css" />↩ <
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 46, column 5; to line 46, column 139
+
+s" />↩ <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/github-6e7c458caf1e80bb.css" />↩ <li
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 47, column 3; to line 47, column 141
+
+css" />↩ <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/repository-6784600ba556c086.css" />↩<link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 48, column 1; to line 48, column 133
+
+6.css" />↩<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/code-0eb15370f045c7e0.css" />↩↩ ↩↩
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 53, column 1; to line 53, column 148
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/high-contrast-cookie-fed1d93364101384.js"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 54, column 1; to line 54, column 152
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/wp-runtime-b9e660709d6ed4c9.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 55, column 1; to line 55, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/28839-734cb6d8a7150172.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 56, column 1; to line 56, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/85924-e131bec5f99667e1.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 57, column 1; to line 57, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/34646-e68f26aaba7f2b0d.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 58, column 1; to line 58, column 153
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/environment-054f5aad5dd15bfc.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 59, column 1; to line 59, column 157
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/runtime-helpers-3bb6f7d6b7a2f531.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 60, column 1; to line 60, column 146
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/2966-f6796bfd155feae1.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 61, column 1; to line 61, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/96232-c2cf4a34762f0169.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 62, column 1; to line 62, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/41013-7a6deee6d6ff15eb.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 63, column 1; to line 63, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/51210-3abb7238871a5b29.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 64, column 1; to line 64, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/77313-f439c46a2769a1fe.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 65, column 1; to line 65, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/95150-3f6eef28aa8b5664.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 66, column 1; to line 66, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/46740-6606b1026a237412.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 67, column 1; to line 67, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/74071-93ba74c3d7e6b111.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 68, column 1; to line 68, column 157
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/github-elements-d8ee5508ed7e2c69.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 69, column 1; to line 69, column 158
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/element-registry-6e5cd1fec7eff27a.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 70, column 1; to line 70, column 152
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/react-core-ee01a646fed07a36.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 71, column 1; to line 71, column 151
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/react-lib-a4cf89fce9a1300a.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 72, column 1; to line 72, column 146
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/7053-544130013a51e287.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 73, column 1; to line 73, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/79039-2565b539a6ebc09b.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 74, column 1; to line 74, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/61110-93cf7706e5dc8bfa.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 75, column 1; to line 75, column 146
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/2887-47ac9a4b8862e6bf.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 76, column 1; to line 76, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/26533-2961d590db2a09c3.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 77, column 1; to line 77, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/18728-664614aa8ee76cdd.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 78, column 1; to line 78, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/12734-63fa4aadaafd4358.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 79, column 1; to line 79, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/89155-5186ca7ca875b304.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 80, column 1; to line 80, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/28305-b663b70eeeaeea9c.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 81, column 1; to line 81, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/63225-0b2c29213bdfc714.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 82, column 1; to line 82, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/60481-19fcf1c5670a41f1.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 83, column 1; to line 83, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/46287-7b500b5354119a88.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 84, column 1; to line 84, column 146
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/2498-7a413c8209222158.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 85, column 1; to line 85, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/57073-554787e8d9e6aaa0.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 86, column 1; to line 86, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/15625-6adfa29b510538fc.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 87, column 1; to line 87, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/48527-864c32c33c6ed02a.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 88, column 1; to line 88, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/28703-fdd40492379f8963.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 89, column 1; to line 89, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/99328-5e06da57c4622e21.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 90, column 1; to line 90, column 146
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/9211-24bfb6c5e4af0b0c.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 91, column 1; to line 91, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/91184-06e912d0593ac0f3.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 92, column 1; to line 92, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/97232-49462d987e3cc4b7.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 93, column 1; to line 93, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/87774-361ab683ce12e20b.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 94, column 1; to line 94, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/27493-fc2daf7119ca7d8f.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 95, column 1; to line 95, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/56889-2c7872f585064a5f.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 96, column 1; to line 96, column 146
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/2013-1d12b562c98f0fa4.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 97, column 1; to line 97, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/81564-2e90400b9da06ade.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 98, column 1; to line 98, column 151
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/behaviors-855cb2fba42664cf.js" defer="defer"></scri
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 99, column 1; to line 99, column 146
+
+</script>↩<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/react-core.bfe20aaa9ccc195d.module.css" />↩<scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 100, column 1; to line 100, column 147
+
+e.css" />↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/38302-841b0fa97d5950a1.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 101, column 1; to line 101, column 162
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/notifications-global-3413132b6df94f22.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 102, column 1; to line 102, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/19262-313c6e4aa6bc1abc.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 103, column 1; to line 103, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/32225-0f598a4a1b50cbd4.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 104, column 1; to line 104, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/19930-d7474e22a5e73a83.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 105, column 1; to line 105, column 152
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/codespaces-a7e0356158a7dd33.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 106, column 1; to line 106, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/45885-7a2bdaed5bad350a.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 107, column 1; to line 107, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/70206-9f6e8f36ba3e113d.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 108, column 1; to line 108, column 154
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/repositories-2ea20c67cb2755f9.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 109, column 1; to line 109, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/34140-bd56b738d77cb446.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 110, column 1; to line 110, column 151
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/code-menu-34c67a8e6616ccae.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 112, column 3; to line 112, column 156
+
+ipt>↩ ↩ <script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/primer-react-30639dc6aed6f824.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 113, column 1; to line 113, column 156
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/octicons-react-6e60bcde38f313de.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 114, column 1; to line 114, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/17383-e0b14a829f4de8f1.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 115, column 1; to line 115, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/68751-fe5cb40b5547c377.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 116, column 1; to line 116, column 146
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/7463-f34e26efc84a7578.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 117, column 1; to line 117, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/15272-00d6ef52b0f88c77.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 118, column 1; to line 118, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/32769-329cba91f224b6ee.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 119, column 1; to line 119, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/91498-6792166474475ba2.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 120, column 1; to line 120, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/50938-5b5d5a0255a1f741.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 121, column 1; to line 121, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/34964-75385910702ba10c.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 122, column 1; to line 122, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/97601-9fb47efefec57c33.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 123, column 1; to line 123, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/63991-125a5c660965e63e.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 124, column 1; to line 124, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/15696-8152a9cd81335aef.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 125, column 1; to line 125, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/36600-03045adfc5db235d.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 126, column 1; to line 126, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/66231-e6e39ee93d5d7dba.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 127, column 1; to line 127, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/18222-498ac30c45b2263a.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 128, column 1; to line 128, column 146
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/4916-50f2539dc1c5e1ee.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 129, column 1; to line 129, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/24787-791cfb59d6b5d03c.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 130, column 1; to line 130, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/17363-e3dd517653b6b9ee.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 131, column 1; to line 131, column 146
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/1097-f69340b097556378.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 132, column 1; to line 132, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/34253-adcd4826f66bae4a.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 133, column 1; to line 133, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/11969-66d44a3037bfb35f.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 134, column 1; to line 134, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/73061-c1057d89c6936e56.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 135, column 1; to line 135, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/38227-47594c6970d0b3c2.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 136, column 1; to line 136, column 146
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/8963-b679af6c81ca0d4a.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 137, column 1; to line 137, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/86923-f2283dc995b9df04.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 138, column 1; to line 138, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/49972-94c3370fcc3392bd.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 139, column 1; to line 139, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/54709-24f4344b560a30c4.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 140, column 1; to line 140, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/96306-1f603f3f74fb4d72.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 141, column 1; to line 141, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/26497-2bdad8556e409811.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 142, column 1; to line 142, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/49115-a5364b0dfe6fca7b.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 143, column 1; to line 143, column 146
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/2758-4d759125d32a5bed.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 144, column 1; to line 144, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/43690-1bf96b09b51e3cc0.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 145, column 1; to line 145, column 151
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/code-view-a11db4a0c915652b.js" defer="defer"></scri
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 146, column 1; to line 146, column 152
+
+</script>↩<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.31c3d131c6277e78.module.css" />↩<link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 147, column 1; to line 147, column 141
+
+e.css" />↩<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/54709.9b4416f3a4a52e84.module.css" />↩<link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 148, column 1; to line 148, column 141
+
+e.css" />↩<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/49115.afef1f2608cde2a7.module.css" />↩<link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 149, column 1; to line 149, column 141
+
+e.css" />↩<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/43690.860ab53bbfc08825.module.css" />↩<link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 150, column 1; to line 150, column 145
+
+e.css" />↩<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/code-view.dc44c5193b1995c5.module.css" />↩↩ <s
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 152, column 3; to line 152, column 149
+
+ss" />↩↩ <script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/75999-8b712b86e441ee4c.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 153, column 1; to line 153, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/86065-3c4de58826a817ae.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 154, column 1; to line 154, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/33684-b8eb0b213686079c.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 155, column 1; to line 155, column 146
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/5289-0f280cdab79a444d.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 156, column 1; to line 156, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/16643-8f0ad7358e18ebd9.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 157, column 1; to line 157, column 174
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/notifications-subscriptions-menu-bfc6c78f783968e0.js" defer="defer"></scri
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 158, column 1; to line 158, column 152
+
+</script>↩<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.31c3d131c6277e78.module.css" />↩<link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 159, column 1; to line 159, column 168
+
+e.css" />↩<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/notifications-subscriptions-menu.17aee93e7bf73fad.module.css" />↩↩↩ <
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 175, column 2; to line 175, column 97
+
+56fb">↩↩↩ <meta name="request-id" content="45EB:398DE3:121F7:17410:69B4B7FC" data-pjax-transient="true"/><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 175, column 98; to line 175, column 229
+
+t="true"/><meta name="html-safe-nonce" content="4d0e31d9688b2fdf62e2bebf8e85c68f356f251f2f011c77ab6d7bcba2ee9fbb" data-pjax-transient="true"/><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 175, column 230; to line 175, column 485
+
+t="true"/><meta name="visitor-payload" content="eyJyZWZlcnJlciI6IiIsInJlcXVlc3RfaWQiOiI0NUVCOjM5OERFMzoxMjFGNz…MyNDkzMjQ2IiwicmVnaW9uX2VkZ2UiOiJpYWQiLCJyZWdpb25fcmVuZGVyIjoiaWFkIn0=" data-pjax-transient="true"/><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 175, column 486; to line 175, column 614
+
+t="true"/><meta name="visitor-hmac" content="f0ab03318ec302f556539d93dadf5a88e5cf38cea4c25be51693961f9caf0426" data-pjax-transient="true"/>
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 181, column 3; to line 181, column 100
+
+ient>↩↩↩ <meta name="github-keyboard-shortcuts" content="repository,copilot" data-turbo-transient="true" />↩ ↩↩
+Error: Attribute value not allowed on element meta at this point.
+
+From line 184, column 3; to line 184, column 70
+
+/>↩ ↩↩ <meta name="selected-link" value="repo_source" data-turbo-transient>↩ <li
+
+Attributes for element meta:
+Global attributes
+name — Metadata name
+http-equiv — Pragma directive
+content — Value of the element
+charset — Character encoding declaration
+media — Applicable media
+Error: Element meta is missing one or more of the following attributes: content, property.
+
+From line 184, column 3; to line 184, column 70
+
+/>↩ ↩↩ <meta name="selected-link" value="repo_source" data-turbo-transient>↩ <li
+
+Attributes for element meta:
+Global attributes
+name — Metadata name
+http-equiv — Pragma directive
+content — Value of the element
+charset — Character encoding declaration
+media — Applicable media
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 189, column 1; to line 189, column 84
+
+Dzdx9I">↩↩<meta name="octolytics-url" content="https://collector.github.com/github/collect" />↩↩↩↩↩↩
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 195, column 3; to line 195, column 111
+
+/>↩↩↩↩↩↩ <meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-turbo-transient="true" />↩↩ ↩↩
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 216, column 5; to line 216, column 128
+
+528">↩ <meta name="apple-itunes-app" content="app-id=1477376905, app-argument=https://github.com/lorenzosean14-cmd/207mdproject" />↩↩
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 218, column 7; to line 218, column 176
+
+/>↩↩ <meta name="twitter:image" content="https://opengraph.githubassets.com/ed82f8d7ba8495a334e04a4136c4e4d9cfa77b6c7a7dce51167f53b3fb7b337f/lorenzosean14-cmd/207mdproject" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 218, column 177; to line 218, column 222
+
+roject" /><meta name="twitter:site" content="@github" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 218, column 223; to line 218, column 280
+
+github" /><meta name="twitter:card" content="summary_large_image" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 218, column 281; to line 218, column 359
+
+_image" /><meta name="twitter:title" content="GitHub - lorenzosean14-cmd/207mdproject" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 218, column 360; to line 218, column 495
+
+roject" /><meta name="twitter:description" content="Contribute to lorenzosean14-cmd/207mdproject development by creating an account on GitHub." />↩ <me
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 219, column 3; to line 219, column 171
+
+ub." />↩ <meta property="og:image" content="https://opengraph.githubassets.com/ed82f8d7ba8495a334e04a4136c4e4d9cfa77b6c7a7dce51167f53b3fb7b337f/lorenzosean14-cmd/207mdproject" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 219, column 172; to line 219, column 304
+
+roject" /><meta property="og:image:alt" content="Contribute to lorenzosean14-cmd/207mdproject development by creating an account on GitHub." /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 219, column 305; to line 219, column 353
+
+itHub." /><meta property="og:image:width" content="1200" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 219, column 354; to line 219, column 402
+
+="1200" /><meta property="og:image:height" content="600" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 219, column 403; to line 219, column 451
+
+t="600" /><meta property="og:site_name" content="GitHub" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 219, column 452; to line 219, column 495
+
+GitHub" /><meta property="og:type" content="object" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 219, column 496; to line 219, column 573
+
+object" /><meta property="og:title" content="GitHub - lorenzosean14-cmd/207mdproject" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 219, column 574; to line 219, column 659
+
+roject" /><meta property="og:url" content="https://github.com/lorenzosean14-cmd/207mdproject" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 219, column 660; to line 219, column 794
+
+roject" /><meta property="og:description" content="Contribute to lorenzosean14-cmd/207mdproject development by creating an account on GitHub." />↩ ↩↩↩
+Error: Bad value x-pjax-version for attribute http-equiv on element meta.
+
+From line 232, column 3; to line 232, column 137
+
+com">↩↩↩ <meta http-equiv="x-pjax-version" content="2dde199ba0d3d3078b67b16e8a47d5d2fc50723aa606a9c5de0aa1b1f7c9de95" data-turbo-track="reload">↩ <me
+Error: Bad value x-pjax-csp-version for attribute http-equiv on element meta.
+
+From line 233, column 3; to line 233, column 141
+
+eload">↩ <meta http-equiv="x-pjax-csp-version" content="568c098497d98702bac1642a2a853732a047a6ced28eabd3e15d50041a890235" data-turbo-track="reload">↩ <me
+Error: Bad value x-pjax-css-version for attribute http-equiv on element meta.
+
+From line 234, column 3; to line 234, column 141
+
+eload">↩ <meta http-equiv="x-pjax-css-version" content="d272dc33c8571fb633a8f266b1bf45eb2835531fefbd76366a26eec971c2a01a" data-turbo-track="reload">↩ <me
+Error: Bad value x-pjax-js-version for attribute http-equiv on element meta.
+
+From line 235, column 3; to line 235, column 140
+
+eload">↩ <meta http-equiv="x-pjax-js-version" content="556e87c50320dc7f029a1f650217616b47dce84ba31c31ec97cc9a332fb5e553" data-turbo-track="reload">↩↩ <m
+Error: Element meta is missing one or more of the following attributes: charset, content, http-equiv, itemprop, name, property.
+
+From line 241, column 5; to line 241, column 36
+
+ent>↩↩ <meta data-hydrostats="publish">↩↩ <m
+
+Attributes for element meta:
+Global attributes
+name — Metadata name
+http-equiv — Pragma directive
+content — Value of the element
+charset — Character encoding declaration
+media — Applicable media
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 245, column 3; to line 245, column 66
+
+.git">↩↩ <meta name="octolytics-dimension-user_id" content="230924168" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 245, column 67; to line 245, column 141
+
+924168" /><meta name="octolytics-dimension-user_login" content="lorenzosean14-cmd" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 245, column 142; to line 245, column 212
+
+14-cmd" /><meta name="octolytics-dimension-repository_id" content="1179383067" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 245, column 213; to line 245, column 304
+
+383067" /><meta name="octolytics-dimension-repository_nwo" content="lorenzosean14-cmd/207mdproject" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 245, column 305; to line 245, column 373
+
+roject" /><meta name="octolytics-dimension-repository_public" content="true" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 245, column 374; to line 245, column 444
+
+="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 245, column 445; to line 245, column 528
+
+"false" /><meta name="octolytics-dimension-repository_network_root_id" content="1179383067" /><meta
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 245, column 529; to line 245, column 633
+
+383067" /><meta name="octolytics-dimension-repository_network_root_nwo" content="lorenzosean14-cmd/207mdproject" />↩↩↩↩
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 267, column 1; to line 267, column 49
+
+#1e2327">↩<meta name="color-scheme" content="light dark" />↩↩↩ <
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 286, column 7; to line 286, column 158
+
+↩ <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.31c3d131c6277e78.module.css" />↩<link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 287, column 1; to line 287, column 161
+
+e.css" />↩<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/keyboard-shortcuts-dialog.c86908ffd3a3faa7.module.css" />↩↩<rea
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 309, column 1; to line 309, column 147
+
+↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/46752-46c707717fcbe6a9.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 310, column 1; to line 310, column 147
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/93308-c21d6ff736807846.js" defer="defer"></scri
+Warning: The type attribute is unnecessary for JavaScript resources.
+
+From line 311, column 1; to line 311, column 150
+
+</script>↩<script crossorigin="anonymous" type="application/javascript" src="https://github.githubassets.com/assets/sessions-e5a020fb258986c3.js" defer="defer"></scri
+Error: Element style not allowed as child of element div in this context. (Suppressing further errors from this subtree.)
+
+From line 313, column 1; to line 313, column 7
+
+/script>↩↩<style>↩ /*
+
+Contexts in which element style may be used:
+Where metadata content is expected.
+In a noscript element that is a child of a head element.
+Content model for element div:
+If the element is a child of a dl element: One or more dt elements followed by one or more dd elements, optionally intermixed with script-supporting elements.
+Otherwise, if the element is a descendant of an option element: Zero or more option element inner content elements.
+Otherwise, if the element is a descendant of an optgroup element: Zero or more optgroup element inner content elements.
+Otherwise, if the element is a descendant of a select element: Zero or more select element inner content elements.
+Otherwise: flow content.
+Warning: The banner role is unnecessary for element header.
+
+From line 321, column 1; to line 321, column 194
+
+</style>↩↩<header class="HeaderMktg header-logged-out js-details-container js-header Details f4 tmp-py-3" role="banner" data-is-top="true" data-color-mode=auto data-light-theme=light data-dark-theme=dark>↩ <h2
+Error: Element div not allowed as child of element span in this context. (Suppressing further errors from this subtree.)
+
+From line 332, column 32; to line 332, column 79
+
+on-label"><div class="HeaderMenu-toggle-bar rounded my-1"></div>
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element span:
+If the element is a descendant of an option element: Zero or more option element inner content elements, except div elements.
+Otherwise: Phrasing content.
+Error: Element div not allowed as child of element span in this context. (Suppressing further errors from this subtree.)
+
+From line 333, column 13; to line 333, column 60
+
+<div class="HeaderMenu-toggle-bar rounded my-1"></div>
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element span:
+If the element is a descendant of an option element: Zero or more option element inner content elements, except div elements.
+Otherwise: Phrasing content.
+Error: Element div not allowed as child of element span in this context. (Suppressing further errors from this subtree.)
+
+From line 334, column 13; to line 334, column 60
+
+<div class="HeaderMenu-toggle-bar rounded my-1"></div>
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element span:
+If the element is a descendant of an option element: Zero or more option element inner content elements, except div elements.
+Otherwise: Phrasing content.
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 365, column 9; to line 365, column 160
+
+>↩ <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.31c3d131c6277e78.module.css" />↩<link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 366, column 1; to line 366, column 155
+
+e.css" />↩<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/appearance-settings.d1fd94316435ff2b.module.css" />↩↩<rea
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 390, column 13; to line 390, column 164
+
+<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.31c3d131c6277e78.module.css" />↩<link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 391, column 1; to line 391, column 156
+
+e.css" />↩<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/marketing-navigation.fe80c5328025a48d.module.css" />↩↩<rea
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 377; to line 401, column 634
+
+">Platform<svg aria-hidden="true" focusable="false" class="octicon octicon-chevron-right NavDropdown-module__b…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 1454; to line 401, column 1695
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-copilot NavLink-module__icon__ltGNM…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 3843; to line 401, column 4089
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-sparkle-fill NavLink-module__icon__…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 4986; to line 401, column 5228
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-ai-model NavLink-module__icon__ltGN…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 6318; to line 401, column 6555
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-mcp NavLink-module__icon__ltGNM" vi…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 7989; to line 401, column 8231
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-workflow NavLink-module__icon__ltGN…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 9171; to line 401, column 9415
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-codespaces NavLink-module__icon__lt…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 10579; to line 401, column 10825
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-issue-opened NavLink-module__icon__…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 11579; to line 401, column 11817
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-code NavLink-module__icon__ltGNM" v…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 12886; to line 401, column 13132
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-shield-check NavLink-module__icon__…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 14254; to line 401, column 14499
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-code-square NavLink-module__icon__l…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 15588; to line 401, column 15826
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-lock NavLink-module__icon__ltGNM" v…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 17317; to line 401, column 17572
+
+ion</span><svg aria-hidden="true" focusable="false" class="octicon octicon-link-external NavLink-module__exter…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 18388; to line 401, column 18643
+
+log</span><svg aria-hidden="true" focusable="false" class="octicon octicon-link-external NavLink-module__exter…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 19484; to line 401, column 19739
+
+log</span><svg aria-hidden="true" focusable="false" class="octicon octicon-link-external NavLink-module__exter…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 21044; to line 401, column 21296
+
+res</span><svg aria-hidden="true" focusable="false" class="octicon octicon-chevron-right NavLink-module__arrow…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 21716; to line 401, column 21973
+
+>Solutions<svg aria-hidden="true" focusable="false" class="octicon octicon-chevron-right NavDropdown-module__b…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 26268; to line 401, column 26520
+
+ses</span><svg aria-hidden="true" focusable="false" class="octicon octicon-chevron-right NavLink-module__arrow…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 28996; to line 401, column 29248
+
+ies</span><svg aria-hidden="true" focusable="false" class="octicon octicon-chevron-right NavLink-module__arrow…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 29929; to line 401, column 30181
+
+ons</span><svg aria-hidden="true" focusable="false" class="octicon octicon-chevron-right NavLink-module__arrow…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 30601; to line 401, column 30858
+
+>Resources<svg aria-hidden="true" focusable="false" class="octicon octicon-chevron-right NavDropdown-module__b…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 33368; to line 401, column 33620
+
+ics</span><svg aria-hidden="true" focusable="false" class="octicon octicon-chevron-right NavLink-module__arrow…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 36106; to line 401, column 36361
+
+lls</span><svg aria-hidden="true" focusable="false" class="octicon octicon-link-external NavLink-module__exter…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 37387; to line 401, column 37642
+
+ion</span><svg aria-hidden="true" focusable="false" class="octicon octicon-link-external NavLink-module__exter…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 38503; to line 401, column 38758
+
+ort</span><svg aria-hidden="true" focusable="false" class="octicon octicon-link-external NavLink-module__exter…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 40886; to line 401, column 41138
+
+ces</span><svg aria-hidden="true" focusable="false" class="octicon octicon-chevron-right NavLink-module__arrow…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 41560; to line 401, column 41817
+
+pen Source<svg aria-hidden="true" focusable="false" class="octicon octicon-chevron-right NavDropdown-module__b…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 42630; to line 401, column 42877
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-sponsor-tiers NavLink-module__icon_…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 44597; to line 401, column 44852
+
+Lab</span><svg aria-hidden="true" focusable="false" class="octicon octicon-link-external NavLink-module__exter…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 45733; to line 401, column 45988
+
+ity</span><svg aria-hidden="true" focusable="false" class="octicon octicon-link-external NavLink-module__exter…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 47259; to line 401, column 47514
+
+ram</span><svg aria-hidden="true" focusable="false" class="octicon octicon-link-external NavLink-module__exter…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 49530; to line 401, column 49787
+
+Enterprise<svg aria-hidden="true" focusable="false" class="octicon octicon-chevron-right NavDropdown-module__b…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 50619; to line 401, column 50858
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-stack NavLink-module__icon__ltGNM" …4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 52316; to line 401, column 52562
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-shield-check NavLink-module__icon__…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 53701; to line 401, column 53942
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-copilot NavLink-module__icon__ltGNM…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 401, column 56110; to line 401, column 56362
+
+t__XvpLQ"><svg aria-hidden="true" focusable="false" class="octicon octicon-comment-discussion NavLink-module__…4" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Attribute placeholder not allowed on element button at this point.
+
+From line 415, column 7; to line 426, column 7
+
+>↩ <button↩ type="button"↩ class="header-search-button placeholder input-button form-control d-flex flex-1 flex-self-stretch flex-items-center no-wrap width-full py-0 pl-2 pr-0 text-left border-0 box-shadow-none"↩ data-target="qbsearch-input.inputButton"↩ aria-label="Search or jump to…"↩ aria-haspopup="dialog"↩ placeholder="Search or jump to..."↩ data-hotkey=s,/↩ autocapitalize="off"↩ data-analytics-event="{&quot;location&quot;:&quot;navbar&quot;,&quot;action&quot;:&quot;sear…uot;,&quot;tag&quot;:&quot;input&quot;,&quot;label&quot;:&quot;searchbar_input_global_navbar&quot;}"↩ data-action="click:qbsearch-input#handleExpand"↩ >↩
+
+Attributes for element button:
+Global attributes
+command — Indicates to the targeted element which action to take.
+commandfor — Targets another element to be invoked.
+disabled — Whether the form control is disabled
+form — Associates the element with a form element
+formaction — URL to use for form submission
+formenctype — Entry list encoding type to use for form submission
+formmethod — Variant to use for form submission
+formnovalidate — Bypass form control validation for form submission
+formtarget — Navigable for form submission
+name — Name of the element to use for form submission and in the form.elements API
+popovertarget — Targets a popover element to toggle, show, or hide
+popovertargetaction — Indicates whether a targeted popover element is to be toggled, shown, or hidden
+type — Type of button
+value — Value to be used for form submission
+Error: Element div not allowed as child of element button in this context. (Suppressing further errors from this subtree.)
+
+From line 427, column 9; to line 427, column 41
+
+>↩ <div class="mr-2 color-fg-muted">↩
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element button:
+Phrasing content, but there must be no interactive content descendant and no descendant with the tabindex attribute specified. If the element is the first child of a select element, then it may also have zero or one descendant selectedcontent element.
+Error: Element div not allowed as child of element button in this context. (Suppressing further errors from this subtree.)
+
+From line 433, column 11; to line 433, column 75
+
+<div class="d-flex" data-target="qbsearch-input.hotkeyIndicator">↩
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element button:
+Phrasing content, but there must be no interactive content descendant and no descendant with the tabindex attribute specified. If the element is the first child of a select element, then it may also have zero or one descendant selectedcontent element.
+Error: Stray end tag option.
+
+From line 451, column 49; to line 451, column 57
+
+</xmp> --></option></form
+Error: Stray end tag form.
+
+From line 451, column 58; to line 451, column 64
+
+></option></form><form
+Error: Bad value for attribute action on element form: Must be non-empty.
+
+From line 451, column 65; to line 451, column 145
+
+on></form><form id="query-builder-test-form" action="" accept-charset="UTF-8" method="get">↩ <qu
+Info: To set the document’s location as the action for a form, omit the action attribute.
+
+From line 451, column 65; to line 451, column 145
+
+on></form><form id="query-builder-test-form" action="" accept-charset="UTF-8" method="get">↩ <qu
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 474, column 13; to line 479, column 103
+
+<input id="query-builder-test" name="query-builder-test" value="" autocomplete="off" type="text" rol…by="validation-8df5e9d2-d4dd-4e79-988c-539931674023" data-target="query-builder.input" data-action="↩ input:query-builder#inputChange↩ blur:query-builder#inputBlur↩ keydown:query-builder#inputKeydown↩ focus:query-builder#inputFocus↩ " data-view-component="true" class="FormControl-input QueryBuilder-Input FormControl-medium" />↩
+Error: Attribute variant not allowed on element button at this point.
+
+From line 484, column 13; to line 488, column 205
+
+<button role="button" id="query-builder-test-clear-button" aria-labelledby="query-builder-test-clear query-builder-test-label" data-action="↩ click:query-builder#clear↩ focus:query-builder#clearButtonFocus↩ blur:query-builder#clearButtonBlur↩ " variant="small" type="button" data-view-component="true" class="Button Button--ico… Button--invisible Button--medium mr-1 px-2 py-0 d-flex flex-items-center rounded-1 color-fg-muted"> <svg
+
+Attributes for element button:
+Global attributes
+command — Indicates to the targeted element which action to take.
+commandfor — Targets another element to be invoked.
+disabled — Whether the form control is disabled
+form — Associates the element with a form element
+formaction — URL to use for form submission
+formenctype — Entry list encoding type to use for form submission
+formmethod — Variant to use for form submission
+formnovalidate — Bypass form control validation for form submission
+formtarget — Navigable for form submission
+name — Name of the element to use for form submission and in the form.elements API
+popovertarget — Targets a popover element to toggle, show, or hide
+popovertargetaction — Indicates whether a targeted popover element is to be toggled, shown, or hidden
+type — Type of button
+value — Value to be used for form submission
+Warning: The button role is unnecessary for element button.
+
+From line 484, column 13; to line 488, column 205
+
+<button role="button" id="query-builder-test-clear-button" aria-labelledby="query-builder-test-clear query-builder-test-label" data-action="↩ click:query-builder#clear↩ focus:query-builder#clearButtonFocus↩ blur:query-builder#clearButtonBlur↩ " variant="small" type="button" data-view-component="true" class="Button Button--ico… Button--invisible Button--medium mr-1 px-2 py-0 d-flex flex-items-center rounded-1 color-fg-muted"> <svg
+Error: Duplicate attribute aria-label.
+
+At line 748, column 83
+
+ose" aria-label="Close" type="
+Error: Stray end tag option.
+
+From line 756, column 108; to line 756, column 116
+
+</xmp> --></option></form
+Error: Stray end tag form.
+
+From line 756, column 117; to line 756, column 123
+
+></option></form><form
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 756, column 243; to line 756, column 405
+
+od="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="ekCtXeaODM4uCgBH4aCR7M5jz7MsTAemjZjBqd2UQtiE+41ue/69NCcGIJdCAtrps06Ta1VVc+VTeavjRLMrsw==" />
+Error: Duplicate attribute aria-label.
+
+At line 783, column 88
+
+ose" aria-label="Close" type="
+Error: Stray end tag option.
+
+From line 794, column 47; to line 794, column 55
+
+</xmp> --></option></form
+Error: Stray end tag form.
+
+From line 794, column 56; to line 794, column 62
+
+></option></form><form
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 794, column 187; to line 794, column 349
+
+od="post"><input type="hidden" data-csrf="true" name="authenticity_token" value="GrLqe0/dhUgMGoUDbTBXCy9T8RRdKq5shCEUMupZtsn4RgC3GWzHPyUu6pb1G8WSrFD/99cG/JW9wBbJYPt43A==" />
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 812, column 14; to line 812, column 151
+
+<input type="hidden" data-csrf="true" value="Uq7Em8NcHhDmC1NdGVo8CQZvfQkcyL0plaWPzqoyb0MIKv3sHV3unaCMqAchq71Vkpf8Z2TNe+L3trEeNKukmA==" />↩
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 880, column 9; to line 880, column 160
+
+>↩ <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-react-css.31c3d131c6277e78.module.css" />↩<link
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 881, column 1; to line 881, column 155
+
+e.css" />↩<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/appearance-settings.d1fd94316435ff2b.module.css" />↩↩<rea
+Error: Attribute icon not allowed on element a at this point.
+
+From line 1025, column 11; to line 1025, column 617
+
+<a icon="repo-forked" id="fork-button" href="/login?return_to=%2Florenzosean14-cmd%2F207mdproject" r…2a95ff41bc77315c902b475c585e197fca436ea076e07f71e812" data-view-component="true" class="btn-sm btn"> <s
+
+Attributes for element a:
+Global attributes
+href — Address of the hyperlink
+target — Navigable for hyperlink navigation
+download — Whether to download the resource instead of navigating to it, and its filename if so
+ping — URLs to ping
+rel — Relationship between the location in the document containing the hyperlink and the destination resource
+hreflang — Language of the linked resource
+type — Hint for the type of the referenced resource
+referrerpolicy — Referrer policy for fetches initiated by the element
+Error: The aria-label attribute must not be specified on any span element unless the element has a role value other than caption, code, deletion, emphasis, generic, insertion, paragraph, presentation, strong, subscript, or superscript.
+
+From line 1038, column 18; to line 1038, column 295
+
+<span id="repo-stars-counter-star" aria-label="0 users starred this repository" data-singular-suffix…ory" data-turbo-replace="true" title="0" data-view-component="true" class="Counter js-social-count">0</spa
+Error: Attribute name not allowed on element meta at this point.
+
+From line 1310, column 42; to line 1310, column 142
+
+eactRoot"><meta name="github-code-view-meta-stats" id="github-code-view-meta-stats" data-hydrostats="publish"/> <!--
+
+Attributes for element meta:
+Global attributes
+name — Metadata name
+http-equiv — Pragma directive
+content — Value of the element
+charset — Character encoding declaration
+media — Applicable media
+Error: Element meta is missing one or more of the following attributes: content, itemprop, property.
+
+From line 1310, column 42; to line 1310, column 142
+
+eactRoot"><meta name="github-code-view-meta-stats" id="github-code-view-meta-stats" data-hydrostats="publish"/> <!--
+
+Attributes for element meta:
+Global attributes
+name — Metadata name
+http-equiv — Pragma directive
+content — Value of the element
+charset — Character encoding declaration
+media — Applicable media
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 1310, column 42; to line 1310, column 142
+
+eactRoot"><meta name="github-code-view-meta-stats" id="github-code-view-meta-stats" data-hydrostats="publish"/> <!--
+Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
+
+From line 1317, column 1; to line 1318, column 137
+
+ect</h1>↩↩↩<input type="hidden" data-csrf="true" value="VrVDYHqhlfQ5Vm6gVVWlhp+0xM9WgvB/E5BeuQUqP9SgYbxpsUnOEfv+n4aFFIPn24f6c82uv4dyRnZWACMXGw==" />↩</rai
+Error: Element div not allowed as child of element span in this context. (Suppressing further errors from this subtree.)
+
+From line 1319, column 1308; to line 1319, column 1390
+
+el-FWkx3"><div class="RefSelectorAnchoredOverlay-module__RefSelectorOverlayContainer__yaf4p"><div c
+
+Contexts in which element div may be used:
+Where flow content is expected.
+As a child of a dl element.
+Content model for element span:
+If the element is a descendant of an option element: Zero or more option element inner content elements, except div elements.
+Otherwise: Phrasing content.
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 2388; to line 1319, column 2607
+
+ap-E4cnq"><svg aria-hidden="true" focusable="false" class="octicon octicon-triangle-down" viewBox="0 0 16 16" …6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value button for attribute type on element a: Subtype missing.
+
+From line 1319, column 2933; to line 1319, column 3136
+
+4__qf73o"><a type="button" href="/lorenzosean14-cmd/207mdproject/branches" class="prc-Button-ButtonBase-9n-Xk …viewContent-module__Button___Uotu" data-loading="false" data-size="medium" data-variant="invisible"><span
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 3330; to line 1319, column 3546
+
+ap-E4cnq"><svg aria-hidden="true" focusable="false" class="octicon octicon-git-branch" viewBox="0 0 16 16" wid…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value button for attribute type on element a: Subtype missing.
+
+From line 1319, column 4006; to line 1319, column 4205
+
+/span></a><a type="button" href="/lorenzosean14-cmd/207mdproject/tags" class="prc-Button-ButtonBase-9n-Xk Over…viewContent-module__Button___Uotu" data-loading="false" data-size="medium" data-variant="invisible"><span
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 4399; to line 1319, column 4608
+
+ap-E4cnq"><svg aria-hidden="true" focusable="false" class="octicon octicon-tag" viewBox="0 0 16 16" width="16"…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value button for attribute type on element a: Subtype missing.
+
+From line 1319, column 5136; to line 1319, column 5397
+
+5__Zc3i7"><a type="button" aria-label="Go to Branches page" href="/lorenzosean14-cmd/207mdproject/branches" cl…n_1__vmS6D" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="invisible"><svg a
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 5398; to line 1319, column 5614
+
+nvisible"><svg aria-hidden="true" focusable="false" class="octicon octicon-git-branch" viewBox="0 0 16 16" wid…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value button for attribute type on element a: Subtype missing.
+
+From line 1319, column 5986; to line 1319, column 6239
+
+</svg></a><a type="button" aria-label="Go to Tags page" href="/lorenzosean14-cmd/207mdproject/tags" class="prc…n_1__vmS6D" data-loading="false" data-no-visuals="true" data-size="medium" data-variant="invisible"><svg a
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 6240; to line 1319, column 6449
+
+nvisible"><svg aria-hidden="true" focusable="false" class="octicon octicon-tag" viewBox="0 0 16 16" width="16"…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 7827; to line 1319, column 8045
+
+ap-E4cnq"><svg aria-hidden="true" focusable="false" class="octicon octicon-code hide-sm" viewBox="0 0 16 16" w…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 8571; to line 1319, column 8790
+
+ap-E4cnq"><svg aria-hidden="true" focusable="false" class="octicon octicon-triangle-down" viewBox="0 0 16 16" …6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 9304; to line 1319, column 9526
+
+dajal1d_"><svg aria-hidden="true" focusable="false" class="octicon octicon-kebab-horizontal" viewBox="0 0 16 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 12269; to line 1319, column 12482
+
+ap-E4cnq"><svg aria-hidden="true" focusable="false" class="octicon octicon-history" viewBox="0 0 16 16" width=…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 13509; to line 1319, column 13722
+
+ap-E4cnq"><svg aria-hidden="true" focusable="false" class="octicon octicon-history" viewBox="0 0 16 16" width=…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Warning: A table row was 3 columns wide, which is less than the column count established by the first row (5).
+
+From line 1319, column 14236; to line 1319, column 14240
+
+/div></td></tr><tr cl
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 14413; to line 1319, column 14638
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 15427; to line 1319, column 15652
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 16652; to line 1319, column 16877
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 17662; to line 1319, column 17887
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 18883; to line 1319, column 19108
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 19901; to line 1319, column 20126
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 21130; to line 1319, column 21355
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 22156; to line 1319, column 22381
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 23393; to line 1319, column 23618
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 24415; to line 1319, column 24640
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 25648; to line 1319, column 25873
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 26704; to line 1319, column 26929
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 27971; to line 1319, column 28196
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 29037; to line 1319, column 29262
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 30314; to line 1319, column 30539
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 31368; to line 1319, column 31593
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 32633; to line 1319, column 32858
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 33679; to line 1319, column 33904
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 34936; to line 1319, column 35161
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 35970; to line 1319, column 36195
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 37226; to line 1319, column 37451
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 38280; to line 1319, column 38505
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 39556; to line 1319, column 39781
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 40578; to line 1319, column 40803
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 41822; to line 1319, column 42047
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 42880; to line 1319, column 43105
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 44160; to line 1319, column 44385
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 45218; to line 1319, column 45443
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 46498; to line 1319, column 46723
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 47576; to line 1319, column 47801
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 48876; to line 1319, column 49101
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 49950; to line 1319, column 50175
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 51246; to line 1319, column 51471
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 52308; to line 1319, column 52533
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 53592; to line 1319, column 53817
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 54670; to line 1319, column 54895
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 55970; to line 1319, column 56195
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 57036; to line 1319, column 57261
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 58324; to line 1319, column 58549
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 59346; to line 1319, column 59571
+
+e-column"><svg aria-hidden="true" focusable="false" class="octicon octicon-file color-fg-muted" viewBox="0 0 1…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Warning: A table row was 3 columns wide, which is less than the column count established by the first row (5).
+
+From line 1319, column 60643; to line 1319, column 60647
+
+/div></td></tr></tbod
+Error: Table column 2 established by element th has no cells beginning in it.
+
+From line 1319, column 10459; to line 1319, column 10518
+
+2__PBp9s"><th colSpan="2" class="DirectoryContent-module__Box__iC_5e"><span
+Warning: The list role is unnecessary for element ul.
+
+From line 1319, column 61138; to line 1319, column 61200
+
+d="false"><ul class="prc-components-UnderlineItemList-xKlKC" role="list"><li cl
+Error: Bad value inline-block for attribute display on element svg.
+
+From line 1319, column 61356; to line 1319, column 61566
+
+nt="icon"><svg aria-hidden="true" focusable="false" class="octicon octicon-book" viewBox="0 0 16 16" width="16…6" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-bottom"><path
+Error: No p element in scope but a p end tag seen.
+
+From line 1360, column 1; to line 1360, column 4
+
+</a>.</p>↩</p>↩↩</di
+Error: Attribute text not allowed on element svg at this point.
+
+From line 1366, column 110; to line 1366, column 264
+
+k--muted"><svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pulse mr-2">↩ <
+Error: The aria-label attribute must not be specified on any include-fragment element unless the element has a role value other than caption, code, deletion, emphasis, generic, insertion, paragraph, presentation, strong, subscript, or superscript.
+
+From line 1423, column 1; to line 1423, column 236
+
+↩<include-fragment aria-busy="true" aria-label="Loading latest packages" src="/lorenzosean14-cmd/207m…itory=207mdproject" data-nonce="v2:1cc12d79-00a2-a670-1783-965dbde0b478" data-view-component="true">↩ ↩
+Error: No p element in scope but a p end tag seen.
+
+From line 1454, column 1; to line 1454, column 4
+
+</a>.</p>↩</p>↩↩</di
+Error: The aria-label attribute must not be specified on any include-fragment element unless the element has a role value other than caption, code, deletion, emphasis, generic, insertion, paragraph, presentation, strong, subscript, or superscript.
+
+From line 1466, column 9; to line 1466, column 263
+
+>↩ <include-fragment aria-busy="true" aria-label="Loading contributors" src="/lorenzosean14-cmd/207mdpr…&amp;deferred=true" data-nonce="v2:1cc12d79-00a2-a670-1783-965dbde0b478" data-view-component="true">↩ ↩
+Error: No p element in scope but a p end tag seen.
+
+From line 1492, column 1; to line 1492, column 4
+
+</a>.</p>↩</p>↩↩</di
+Warning: The contentinfo role is unnecessary for element footer.
+
+From line 1549, column 11; to line 1549, column 122
+
+<footer class="footer tmp-pt-7 tmp-pb-6 f6 color-fg-muted color-border-subtle p-responsive" role="contentinfo" >↩ <h2
+Error: The aria-describedby attribute references feedback-dialog-description, which is not the ID of any element in this document.
+
+From line 738, column 3; to line 738, column 405
+
+helper>↩ <dialog data-target="qbsearch-input.feedbackDialog" data-action="close:qbsearch-input#handleDialogCl…="Overlay Overlay-whenNarrow Overlay--size-medium Overlay--motion-scaleFade Overlay--disableScroll">↩ <
+Warning: Consider using the h1 element as a top-level heading only — or else use the headingoffset attribute (otherwise, all h1 elements are treated as top-level headings by many screen readers and other tools).
+
+From line 1319, column 62401; to line 1319, column 62453
+
